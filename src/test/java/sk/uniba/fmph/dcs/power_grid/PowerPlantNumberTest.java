@@ -9,7 +9,6 @@ import java.util.Map;
 import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertFalse;
 import static org.junit.Assert.assertNotEquals;
 
 public class PowerPlantNumberTest {
@@ -53,8 +52,8 @@ public class PowerPlantNumberTest {
     public void doesNotEqualNullOrAnotherType() {
         final PowerPlantNumber number = new PowerPlantNumber(17);
 
-        assertFalse(number.equals(null));
-        assertFalse(number.equals(Integer.valueOf(17)));
+        assertNotEquals(null, number);
+        assertNotEquals(17, number);
     }
 
     @Test
