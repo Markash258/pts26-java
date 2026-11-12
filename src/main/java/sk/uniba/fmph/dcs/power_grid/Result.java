@@ -25,7 +25,7 @@ public final class Result<T> {
      * @throws NullPointerException if value is null
      */
     public static <T> Result<T> success(final T value) {
-        return new Result<>(Objects.requireNonNull(value,), null);
+        return new Result<>(Objects.requireNonNull(value), null);
     }
 
     /**
