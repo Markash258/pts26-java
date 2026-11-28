@@ -52,8 +52,8 @@ public class PowerPlantNumberTest {
     public void doesNotEqualNullOrAnotherType() {
         final PowerPlantNumber number = new PowerPlantNumber(17);
 
-        assertNotEquals(null, number);
-        assertNotEquals(17, number);
+        assertNotEquals(number, null);
+        assertNotEquals(number, Integer.valueOf(17));
     }
 
     @Test
